@@ -10,7 +10,7 @@ on:
 
 
 jobs:  
-  e2e _orkflow:
+  e2e_workflow:
     runs-on: ubuntu-latest
 
     steps:
