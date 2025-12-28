@@ -18,7 +18,8 @@ spec:
         app: model
     spec:
       containers:
-      - image: initcron/house-price-model:latest
+      - image: oviya13/house-price-model:latest
+        imagePullPolicy: Always
         name: house-price-model
         ports:
         - containerPort: 8000

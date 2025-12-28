@@ -18,7 +18,8 @@ spec:
         app: streamlit
     spec:
       containers:
-      - image: initcron/streamlit:latest
+      - image: oviya13/streamlit:latest
+        imagePullPolicy: Always   
         name: streamlit
         ports:
         - containerPort: 8501
