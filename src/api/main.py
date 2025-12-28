@@ -42,6 +42,7 @@ threading.Thread(target=start_metrics_server, daemon=True).start()
 async def health_check():
     return {"status": "healthy", "model_loaded": True}
 
+
 # Prediction endpoint
 @app.post("/predict", response_model=PredictionResponse)
 async def predict(request: HousePredictionRequest):
